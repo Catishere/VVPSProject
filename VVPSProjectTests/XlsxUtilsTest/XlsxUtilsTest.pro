@@ -6,6 +6,9 @@ CONFIG -= app_bundle
 
 TEMPLATE = app
 
+QMAKE_CXXFLAGS += --coverage
+QMAKE_LFLAGS += --coverage
+
 # QXlsx code for Application Qt project
 QXLSX_PARENTPATH=../../VVPSProject         # current QXlsx path is . (. means curret directory)
 QXLSX_HEADERPATH=../../VVPSProject/header/  # current QXlsx header path is ./header/

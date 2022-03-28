@@ -2,6 +2,10 @@ QT       += core gui testlib
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
+QMAKE_CXXFLAGS += --coverage
+QMAKE_LFLAGS += --coverage
+
+
 CONFIG += c++11
 
 # QXlsx code for Application Qt project

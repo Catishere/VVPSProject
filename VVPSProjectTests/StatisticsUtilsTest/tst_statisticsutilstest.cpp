@@ -6,6 +6,7 @@ class StatisticsUtilsTest : public QObject
     Q_OBJECT
 
 static const QList<int> testData;
+static const QList<int> testDataEven;
 
 public:
     StatisticsUtilsTest();
@@ -26,6 +27,12 @@ const QList<int> StatisticsUtilsTest::testData =
               10, 11, 11, 14, 14, 14, 15,
               15, 15, 15, 16, 16, 18, 18,
               19, 19, 19, 20 };
+
+const QList<int> StatisticsUtilsTest::testDataEven =
+            {  1,  3,  6,  7,  7,  9,  9,
+              10, 11, 11, 14, 14, 15, 15,
+              15, 15, 15, 16, 16, 18, 18,
+              19, 19, 19 };
 
 StatisticsUtilsTest::StatisticsUtilsTest()
 {
@@ -60,6 +67,8 @@ void StatisticsUtilsTest::testCalculateMedian()
     StatisticsUtils stats;
     auto median = stats.calculateMedian(testData);
     QCOMPARE(median, 14);
+    median = stats.calculateMedian(testDataEven);
+    QCOMPARE(median, 14.5);
 }
 
 void StatisticsUtilsTest::testCalculateAverage()
@@ -92,6 +101,7 @@ void StatisticsUtilsTest::testCalculateVariance()
     auto variance = stats.calculateVariance(testData);
     QCOMPARE(variance, 27.39);
     stats.setComplete(true);
+    QVERIFY(stats.getComplete());
     variance = stats.calculateVariance(testData);
     QCOMPARE(variance, 26.2944);
 }

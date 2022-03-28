@@ -18,8 +18,8 @@ public:
 
 private slots:
     void initTestCase();
+    void cleanupTestCase();
     void testUILoadFile();
-
 };
 
 UITest::UITest()
@@ -41,6 +41,11 @@ void UITest::initTestCase()
 void UITest::testUILoadFile()
 {
     QVERIFY(true);
+}
+
+void UITest::cleanupTestCase()
+{
+    delete mainWindow;
 }
 
 QTEST_MAIN(UITest)

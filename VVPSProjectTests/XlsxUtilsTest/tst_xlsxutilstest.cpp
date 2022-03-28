@@ -28,8 +28,11 @@ XlsxUtilsTest::~XlsxUtilsTest()
 
 void XlsxUtilsTest::testLoad()
 {
-    Document xlsx(":/test.xlsx");
-    QVERIFY(xlsx.load());
+    XlsxUtils xlsx(":/test.xlsx");
+    QVERIFY(xlsx.loaded());
+    XlsxUtils xlsx2("./Makefile");
+    QCOMPARE(xlsx2.loaded(), false);
+    QCOMPARE(xlsx2.getUsers().size(), 0);
 }
 
 void XlsxUtilsTest::testGetUsers()

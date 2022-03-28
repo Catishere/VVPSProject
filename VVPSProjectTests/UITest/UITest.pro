@@ -1,5 +1,8 @@
 QT += testlib gui widgets
 
+QMAKE_CXXFLAGS += --coverage
+QMAKE_LFLAGS += --coverage
+
 CONFIG += qt warn_on depend_includepath testcase
 
 TEMPLATE = app

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 6.0.2, 2022-03-24T01:01:56. -->
+<!-- Written by QtCreator 6.0.2, 2022-03-28T23:57:49. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -76,6 +76,7 @@
     <value type="Qt::CheckState" key="1@C:/Users/vikto/Documents/VVPSProjectAll/VVPSProjectTests/StatisticsUtilsTest/tst_statisticsutilstest.cpp:testCalculateScope">Checked</value>
     <value type="Qt::CheckState" key="1@C:/Users/vikto/Documents/VVPSProjectAll/VVPSProjectTests/StatisticsUtilsTest/tst_statisticsutilstest.cpp:testCalculateVariance">Checked</value>
     <value type="Qt::CheckState" key="1@C:/Users/vikto/Documents/VVPSProjectAll/VVPSProjectTests/UITest/tst_uitest.cpp:UITest">Checked</value>
+    <value type="Qt::CheckState" key="1@C:/Users/vikto/Documents/VVPSProjectAll/VVPSProjectTests/UITest/tst_uitest.cpp:cleanupTestCase">Unchecked</value>
     <value type="Qt::CheckState" key="1@C:/Users/vikto/Documents/VVPSProjectAll/VVPSProjectTests/UITest/tst_uitest.cpp:initTestCase">Checked</value>
     <value type="Qt::CheckState" key="1@C:/Users/vikto/Documents/VVPSProjectAll/VVPSProjectTests/UITest/tst_uitest.cpp:testUILoadFile">Checked</value>
     <value type="Qt::CheckState" key="1@C:/Users/vikto/Documents/VVPSProjectAll/VVPSProjectTests/XlsxUtilsTest/tst_xlsxutilstest.cpp:XlsxUtilsTest">Checked</value>
