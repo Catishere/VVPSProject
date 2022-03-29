@@ -50,11 +50,11 @@ void MainWindow::calculateStatistics()
     if (modes.isEmpty())
         ui->mode->setText("Няма");
     else {
-        QString modeString;
-        ui->mode->setText(modeString);
+        QStringList list;
         for (auto mode : modes) {
-            modeString += QString::number(mode) + ' ';
+           list.append(QString::number(mode));
         }
+        ui->mode->setText(list.join(' '));
     }
 
     ui->median->setText(QString::number(stats.calculateMedian(users)));
